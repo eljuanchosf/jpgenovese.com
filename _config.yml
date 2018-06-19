@@ -1,0 +1,56 @@
+title: Juan Pablo Genovese
+description: > # this means to ignore newlines until "baseurl:"
+  Cloud Architect and DevOps practitioner and evangelist. I have been in the IT industry for 21 years and, as a “jack of all trades” I love going all around the spectrum of IT activities. I'm focused on helping companies of all sizes to adopt and use Cloud and DevOps principles, and practices and technologies. I have spoken at several conferences and meetups in the U.S., Argentina, Uruguay, and Mexico.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jpgenovese.com" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: 'blog/:title/'
+blog_theme: dark # Or use dark
+
+# Profile information
+name: Juan Pablo Genovese
+tagline: "Cloud Architect & Consultant /\n DevOps Practitioner"
+about-description: >
+  Cloud Architect and DevOps practitioner and evangelist. I have been in the IT industry for 21 years and, as a “jack of all trades” I love going all around the spectrum of IT activities. I'm focused on helping companies of all sizes to adopt and use Cloud and DevOps principles, and practices and technologies. I have spoken at several conferences and meetups in the U.S., Argentina, Uruguay, and Mexico.
+pic: Juan_Pablo_Genovese.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
+
+# Contact links
+email: juan@jpgenovese.com # Add your Email address
+phone: # Add your Phone number
+website: jpgenovese.com # Add your website, do not add http://
+linkedin: juanpgenovese # Add your Linkedin handle
+github: # Add your Github handle
+twitter: '@eljuanchosf' # Add your Twitter handle
+resume: http://resume.jpgenovese.com
+
+# Tracker
+analytics:
+
+# Comments
+discus-identifier: # Add your Disqus identifier
+
+# Important settings
+assets:
+  sources:
+    - assets/fonts
+    - assets/img
+    - assets/js
+    - assets/stylesheets
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  my-values:
+    output: true
+    permalink: /my-values/:path
+
+include: [_pages]
