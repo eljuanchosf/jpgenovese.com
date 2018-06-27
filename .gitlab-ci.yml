@@ -1,4 +1,4 @@
-image: drecom/ubuntu-ruby:latest
+image: juanpgenovese/jekyll:3.8.3
 
 variables:
   JEKYLL_ENV: production
@@ -6,25 +6,31 @@ variables:
 before_script:
   - bundle install
 
+build:
+  stage: build
+  script:
+    - bundle exec jekyll build -d jpgenovese
+  artifacts:
+    expire_in: 1 month
+    paths:
+      - jpgenovese
 test:
   stage: test
   script:
-    - bundle exec jekyll build
-    - webfsd -p 4000 -f _site/ndex.html
-    - http GET http://localhost:4000/ | grep "Juan Pablo Genovese"
-    - linkchecker http://localhost:4000/
+    - cd /builds/project-0/jpgenovese && webfsd -p 4000 -f index.html
+    - http GET http://127.0.0.1:4000 | grep "Juan Pablo Genovese"
+    - linkchecker http://127.0.0.1:4000/
   artifacts:
     paths:
-    - test
-  except:
-  - master
+    - jpgenovese
 
-pages:
+deploy:
   stage: deploy
   script:
-  - bundle exec jekyll build -d public
+    - export LC_ALL=C.UTF-8
+    - export LANG=C.UTF-8
   artifacts:
     paths:
-    - public
+    - jpgenovese
   only:
   - master
