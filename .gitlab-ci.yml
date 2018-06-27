@@ -1,0 +1,30 @@
+image: drecom/ubuntu-ruby:latest
+
+variables:
+  JEKYLL_ENV: production
+
+before_script:
+  - bundle install
+
+test:
+  stage: test
+  script:
+    - bundle exec jekyll build
+    - webfsd -p 4000 -f _site/ndex.html
+    - http GET http://localhost:4000/ | grep "Juan Pablo Genovese"
+    - linkchecker http://localhost:4000/
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
