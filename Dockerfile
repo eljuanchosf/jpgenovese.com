@@ -17,7 +17,7 @@ RUN apt-get update \
     webfs \
     httpie \
     linkchecker \
-    lftp \
+    sshpass \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
