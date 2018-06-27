@@ -1,14 +1,21 @@
 image: juanpgenovese/jekyll:3.8.3
 
+stages:
+  - build
+  - test
+  - deploy
+
+cache:
+  paths:
+    - jpgenovese
+
 variables:
   JEKYLL_ENV: production
-
-before_script:
-  - bundle install
 
 build:
   stage: build
   script:
+    - bundle install
     - bundle exec jekyll build -d jpgenovese
   artifacts:
     expire_in: 1 month
@@ -24,7 +31,7 @@ test:
     - linkchecker http://127.0.0.1:4000/
   artifacts:
     paths:
-    - jpgenovese
+      - jpgenovese
 
 deploy:
   stage: deploy
@@ -36,6 +43,6 @@ deploy:
     - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./jpgenovese/* "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/test.jpgenovese.com/"
   artifacts:
     paths:
-    - jpgenovese
+      - jpgenovese
   only:
   - master
