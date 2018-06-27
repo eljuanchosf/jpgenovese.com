@@ -18,7 +18,7 @@ build:
     - bundle install
     - bundle exec jekyll build -d jpgenovese
   artifacts:
-    expire_in: 1 month
+    expire_in: 1 hour
     paths:
       - jpgenovese
 test:
@@ -41,6 +41,6 @@ deploy:
   script:
     - export LC_ALL=C.UTF-8
     - export LANG=C.UTF-8
-    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./jpgenovese/* "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/test.jpgenovese.com/"
+    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./jpgenovese/* "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$TARGET_DIR/"
   only:
   - master
