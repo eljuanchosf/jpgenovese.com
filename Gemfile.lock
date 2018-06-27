@@ -41,7 +41,7 @@ GEM
       pathutil (>= 0.8)
       rack (> 1, < 2)
       sprockets (~> 3.3, < 3.7)
-    jekyll-feed (0.9.1)
+    jekyll-feed (0.10.0)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -78,11 +78,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  foreman
+  foreman (= 0.64.0)
   jekyll (= 3.8.3)
-  jekyll-assets
-  jekyll-feed (~> 0.6)
-  tzinfo-data
+  jekyll-assets (= 2.2.8)
+  jekyll-feed (= 0.10.0)
 
 BUNDLED WITH
    1.16.2
