@@ -16,7 +16,9 @@ build:
   stage: build
   script:
     - bundle install
-    - bundle exec jekyll build -d jpgenovese
+    - echo "version: $CI_COMMIT_SHA" > _config.ci.yml
+    - echo "analytics: $GA_ID" >> _config.ci.yml
+    - bundle exec jekyll build -d jpgenovese --config _config.yml,_config.ci.yml
   artifacts:
     expire_in: 1 hour
     paths:
