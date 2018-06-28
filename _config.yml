@@ -51,6 +51,10 @@ exclude:
   - Procfile
   - LICENSE
   - serve.sh
+  - build.sh
+  - resume/
+  - Dockerfile
+  - README.md
 
 collections:
   my-values:

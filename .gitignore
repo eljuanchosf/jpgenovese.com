@@ -4,3 +4,6 @@ _site
 .asset-cache
 .jekyll-metadata
 _config.ci.yml
+resume/node_modules
+resume/out
+resume/package-lock.json

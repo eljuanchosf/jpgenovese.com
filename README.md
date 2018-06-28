@@ -1,28 +1,13 @@
-# The Monday Jekyll theme
-=========================
+# Juan Pablo's Genovese site
 
-Dark Theme:
-![](assets/img/documentation/dark.png)
+## Dependencies
 
-Light Theme:
-![](assets/img/documentation/light.png)
+* [Jekyll 3.8.3](https://www.jekyllrb.com)
+* [Nodejs 8+](https://nodejs.org/en/download/)
+* [npm 6+](https://npmjs.com/package/npm)
+* [hackmyresume](https://github.com/hacksalot/HackMyResume)
 
-# Demo
-View this jekyll theme in action [here](http://artemsheludko.pw/monday/)
+## Helpers
 
-Integrations
-  - [Google Fonts](https://fonts.google.com/)
-  - [Google Analytics](https://analytics.google.com/analytics/web/)
-  - [Disqus](https://disqus.com/)
-  - [Font Awesome](http://fontawesome.io/)
-  - Social media links
-
-# How to Use
-
-  For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details,
-  or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),
-  and [creating pages](https://jekyllrb.com/docs/pages/).
-
-## License
-
-GPL-v3.0
+* `build.sh`: Script for building the site.
+* `serve.sh`: Serve Jekyll site with autoreload.

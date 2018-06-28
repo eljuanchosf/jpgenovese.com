@@ -18,6 +18,7 @@ RUN apt-get update \
     httpie \
     linkchecker \
     sshpass \
+    wkhtmltopdf \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
@@ -59,5 +60,8 @@ RUN eval "$(rbenv init -)"; gem install jekyll --version=3.8.3 --no-rdoc --no-ri
 &&  eval "$(rbenv init -)"; gem install jekyll-assets --version=2.2.8 --no-rdoc --no-ri \
 &&  eval "$(rbenv init -)"; gem install foreman --version=0.64.0 --no-rdoc --no-ri \
 &&  rm -rf /tmp/*
+
+RUN npm install npm -g \
+    && npm install hackmyresume -g
 
 EXPOSE 4000 80
