@@ -21,8 +21,7 @@ build:
     expire_in: 1 hour
     paths:
       - jpgenovese
-      - resume/out/resume.pdf
-      - resume/out/resume.html
+      - resume/out
 test:
   stage: test
   dependencies: 
@@ -31,7 +30,7 @@ test:
     - cd jpgenovese && webfsd -p 4000 -f index.html
     - http GET http://127.0.0.1:4000 | grep "Juan Pablo Genovese"
     - linkchecker http://127.0.0.1:4000/
-    
+
 deploy:
   stage: deploy
   dependencies:
