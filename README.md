@@ -9,5 +9,5 @@
 
 ## Helpers
 
-* `build.sh`: Script for building the site.
-* `serve.sh`: Serve Jekyll site with autoreload.
+* [`build.sh`](build.sh): Script for building the site.
+* [`serve.sh`](serve.sh): Serve Jekyll site with autoreload.

@@ -1,8 +1,22 @@
 #! /bin/bash
 
-bundle install
-cat << EOF > _config.ci.yml
+
+build_jekyll() {
+  bundle install
+  cat << EOF > _config.ci.yml
 version: $CI_COMMIT_SHA
 analytics: $GA_ID
 EOF
-bundle exec jekyll build -d jpgenovese --config _config.yml,_config.ci.yml
+  bundle exec jekyll build -d jpgenovese --config _config.yml,_config.ci.yml
+}
+
+build_resume() {
+  pushd ./resume
+  npm install jsonresume-theme-flat
+  hackmyresume build resume.json out/resume.all -t node_modules/jsonresume-theme-flat
+  hackmyresume analyze resume.json > out/resume.stats
+  popd
+}
+
+build_jekyll
+build_resume
