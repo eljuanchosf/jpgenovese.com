@@ -48,12 +48,16 @@ layout: default
         {% endif %}
         
         {% if site.resume %}
-          <li class="resume"><a href="http://resume.jpgenovese.com" target="_blank"><i class="fa fa-file"></i> {{site.resume}}</a></li>
+          <li class="resume"><a href="http://resume.jpgenovese.com" target="_blank"><i class="fa fa-address-card"></i> {{site.resume}}</a></li>
         {% else %}
           <li class="resume"><a href="http://www.jpgenovese.com" target="_blank"><i class="fa fa-file" aria-hidden="true"></i> jpgenovese.com</a></li>
         {% endif %}
 
-
+        {% if site.pdf_resume %}
+          <li class="resume"><a href="{{site.pdf_resume}}" target="_blank"><i class="fa fa-download"></i> PDF Resume</a></li>
+        {% else %}
+          <li class="resume"><a href="http://www.jpgenovese.com" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> jpgenovese.com</a></li>
+        {% endif %}
       </ul>
     </div>
   </div>
