@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -e
+
 RESUME_THEME=stackoverflow
 
 build_jekyll() {
