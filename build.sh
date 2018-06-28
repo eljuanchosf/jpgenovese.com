@@ -13,8 +13,10 @@ EOF
 build_resume() {
   pushd ./resume
   npm install jsonresume-theme-flat
-  hackmyresume build resume.json out/resume.all -t node_modules/jsonresume-theme-flat
+  hackmyresume build resume.json TO out/resume.html -t node_modules/jsonresume-theme-flat
+  hackmyresume build resume.json TO out/resume.pdf -t node_modules/jsonresume-theme-flat
   hackmyresume analyze resume.json > out/resume.stats
+  cat out/resume.stats
   popd
 }
 
