@@ -8,7 +8,7 @@ stages:
 cache:
   paths:
     - jpgenovese
-    - resume
+    - resume/out
 
 variables:
   JEKYLL_ENV: production
