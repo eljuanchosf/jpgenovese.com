@@ -37,10 +37,6 @@ assets:
     - assets/stylesheets
 
 # Build settings
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
 plugins:
   - jekyll-feed
   - jekyll-assets
