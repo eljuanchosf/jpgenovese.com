@@ -8,6 +8,7 @@ stages:
 cache:
   paths:
     - jpgenovese
+    - resume
 
 variables:
   JEKYLL_ENV: production
@@ -20,6 +21,8 @@ build:
     expire_in: 1 hour
     paths:
       - jpgenovese
+      - resume/out/resume.pdf
+      - resume/out/resume.html
 test:
   stage: test
   dependencies: 
@@ -28,10 +31,7 @@ test:
     - cd jpgenovese && webfsd -p 4000 -f index.html
     - http GET http://127.0.0.1:4000 | grep "Juan Pablo Genovese"
     - linkchecker http://127.0.0.1:4000/
-  artifacts:
-    paths:
-      - jpgenovese
-
+    
 deploy:
   stage: deploy
   dependencies:
