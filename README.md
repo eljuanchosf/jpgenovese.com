@@ -1,5 +1,7 @@
 # Juan Pablo's Genovese site
 
+[![pipeline status](https://gitlab.com/eljuanchosf/jpgenovese.com/badges/master/pipeline.svg)](https://gitlab.com/eljuanchosf/jpgenovese.com/commits/master)
+
 ## Dependencies
 
 * [Jekyll 3.8.3](https://www.jekyllrb.com)

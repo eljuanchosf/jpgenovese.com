@@ -2,7 +2,8 @@
 
 set -e
 
-RESUME_THEME=stackoverflow
+RESUME_ONLINE_THEME=stackoverflow
+RESUME_PDF_THEME=spartan
 
 build_jekyll() {
   bundle install
@@ -15,9 +16,10 @@ EOF
 
 build_resume() {
   pushd ./resume
-  npm install jsonresume-theme-$RESUME_THEME
-  hackmyresume build ./resume.json TO out/resume.html -t node_modules/jsonresume-theme-$RESUME_THEME
-  hackmyresume build ./resume.json TO out/resume.pdf --pdf wkhtmltopdf -t node_modules/jsonresume-theme-$RESUME_THEME
+  npm install jsonresume-theme-$RESUME_ONLINE_THEME
+  npm install jsonresume-theme-$RESUME_PDF_THEME
+  hackmyresume build ./resume.json TO out/resume.html -t node_modules/jsonresume-theme-$RESUME_ONLINE_THEME
+  hackmyresume build ./resume.json TO out/resume.pdf --pdf wkhtmltopdf -t node_modules/jsonresume-theme-$RESUME_PDF_THEME
   hackmyresume analyze ./resume.json > out/resume.stats
   cat out/resume.stats
   popd
