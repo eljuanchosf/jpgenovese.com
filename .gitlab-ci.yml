@@ -39,8 +39,8 @@ deploy:
   script:
     - export LC_ALL=C.UTF-8
     - export LANG=C.UTF-8
-    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./jpgenovese/* "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$TARGET_DIR/"
-    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./resume/out/resume.html "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/resume.jpgenovese.com/index.html"
-    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./resume/out/resume.pdf "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/resume.jpgenovese.com/resume-Juan-Pablo-Genovese.pdf
+    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./jpgenovese/* "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$BLOG_TARGET_DIR/"
+    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./resume/out/resume.html "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$RESUME_TARGET_DIR/index.html"
+    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./resume/out/resume.pdf "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$RESUME_TARGET_DIR/jpg-resume.pdf"
   only:
   - master
