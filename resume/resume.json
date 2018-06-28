@@ -1,130 +1,195 @@
 {
-  "basics": {
-    "name": "Juan Pablo Genovese",
-    "label": "Programmer",
-    "picture": "",
-    "email": "juan@jpgenovese.com",
-    "phone": "(912) 555-4321",
-    "website": "http://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
-      },
-      {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
-      }
-    ]
-  },
-  "work": [
-    {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ]
+	"basics": {
+		"name": "Juan Pablo Genovese",
+		"label": "Cloud Architect & Engineer / DevOps",
+		"picture": "",
+		"email": "juan@jpgenovese.com",
+		"website": "http://jpgenovese.com",
+		"summary": "I'm an experienced IT engineer and craftsman with over 20 years of experience in various vertical industries. I'm currently focused in helping companies from all sizes to adopt and implement Cloud and DevOps principles and practices, allowing them to grow consistently and with confidence.",
+		"location": {
+			"address": "",
+			"postalCode": "",
+			"city": "",
+			"countryCode": "",
+			"region": ""
+		},
+		"profiles": [{
+				"network": "Twitter",
+				"username": "eljuanchosf",
+				"url": "https://www.twitter.com/eljuanchosf"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "juanpgenovese",
+				"url": "https://www.linkedin.com/in/juanpgenovese"
+			}
+		]
+	},
+	"work": [{
+			"company": "Fujitsu Global",
+			"position": "Cloud & Hybrid Technologist, Lead Technical Consultant",
+			"website": "http://www.fujitsu.com/",
+			"startDate": "2017-11-01",
+			"summary": "I'm responsible for successfully on-boarding and guiding both new and existing customer through their transition and digital journey, including proof of concepts, technical demonstrations of solutions and contributions to the ongoing innovation of the Cloud/Hybrid/DevOps portfolio in general.  I deliver technical cloud and hybrid demonstrations, provide 1-2-1 technical guidance to new customers on their chosen solutions, ensure customers are aware of Fujitsu's wider Digital Transformation Services and Products offerings, provide support to Fujitsu's EMEIA Hybrid IT Team and contribute to the creation and execution of Learning And Development material.",
+			"highlights": []
+		},
+		{
+			"company": "Altoros",
+			"position": "Cloud Architect & Engineer / DevOps",
+			"website": "https://www.altoros.com/",
+			"startDate": "2012-11-01",
+			"endDate": "2017-11-01",
+			"summary": "Engage multidisciplinary projects that applies an agile process to system architecture, software development, testing and deployment. Automate tasks required to maintain a secure and up to date operational environment, eventually supporting the engineering team with hands-on coding. Design, implement and test architectural blueprints to support a solid but flexible infrastructure to ensure the best possible outcome in every situation. Develop, improve, maintain, and document infrastructure management systems working with other teams to build, test and roll out systems. Help with deployment and testing infrastructure, supporting the implementation of Continuous Integration, help refine the development processes while interacting constantly with Software Engineers and Stakeholders. Train end users, Stakeholders and software developers in the different aspects of the best practices and tools used to achieve the level of confidence necessary to have a fully automated software deployment platform.",
+			"highlights": []
+		},
+		{
+			"company": "Binlogic",
+			"position": "CTO/Partner",
+			"website": "https://www.binlogic.com/",
+			"startDate": "2010-11-01",
+			"endDate": "2012-12-31",
+			"summary": "Responsible for applying the best techniques, technologies and knowledge in the Enterprise Integration field and MySQL administration / tuning / enhancing. Developed custom applications for the company's customers, as well for internal use.",
+			"highlights": []
+		},
+		{
+			"company": "Aligned Global",
+			"position": "Project & Technical Leader - SysAdmin - Scrum Master - Architect",
+			"website": "https://www.alignedglobal.com/",
+			"startDate": "2011-02-01",
+			"endDate": "2012-09-30",
+			"summary": "Define, implement and keep track of the different layers, technologies and components for the Buyjacker application. Develop the project's website and backend administrative interface, the data ETL processes and batch processing, design and development of the backend's REST API. Development of the single sign on and authorization services. Administration, securization and tuning of several applications and physical servers hosted in RackSpace. Definition, administration and follow up of tasks for a 5 person team, while reporting to the stakeholders. Atlassian Jira/Confluence/Bamboo administration.",
+			"highlights": []
+		},
+		{
+			"company": "Galbop",
+			"position": "Solutions, software and systems architect",
+			"website": "http://www.galbop.com/",
+			"startDate": "2010-11-01",
+			"endDate": "2012-01-31",
+			"summary": "Build solutions to integrate different types of software, from legacy software to web applications. Architect services for internal and external consuming. Support and advisory on different areas (technical, human, management). Team coaching and training.",
+			"highlights": []
+		},
+		{
+			"company": "Folder IT",
+			"position": "Project Leader / SOA Architect",
+			"website": "https://www.folderit.com/",
+			"startDate": "2007-10-01",
+			"endDate": "2010-10-31",
+			"summary": "Design, develop and deliver high performance web applications for several customers in various industries around the world. Project Leader for teams of several sizes (from 2 to 15 resources). Enabled SOA Integration @ Orange Dominicana using Oracle SOA Suite 11g. SOA Architecture design and re engineering. Legacy software integration. Assign and track tasks for each member of the team to ensure maximum productivity and ROI. Generate leads and business oportunities in the US/UK area. Keep track of the leads and adquire projects for the company. Quality Assurance Manager specialized in ISO 9001:2008 guidelines and CMMI Level 3 recommendations. Manage company IT assets, improve Internet connection speeds and effectively failproof servers and workstations against several risks and threats.",
+			"highlights": []
+		},
+		{
+			"company": "Team Quality",
+			"position": "Software Engineer",
+			"startDate": "2000-02-01",
+			"endDate": "2002-04-30",
+			"summary": "Analisys, development and maintenance of the company's products.",
+			"highlights": []
+		},
+		{
+			"company": "Republic National Bank Of New York",
+			"position": "Software Developer",
+			"startDate": "1998-11-01",
+			"endDate": "2000-01-31",
+			"summary": "Programming solutions for the compay in Visual Basic 5.0, Oracle PL/SQL and RPG for AS/400. Oracle 7.3 database administration.",
+			"highlights": []
+		},
+		{
+			"company": "Bilenio SH",
+			"position": "Software Developer",
+			"startDate": "1998-06-01",
+			"endDate": "1998-10-30",
+			"summary": "Visual Basic programmer, developing a front-end app for HR administration. Network installation anda database administration.",
+			"highlights": []
+		}
+	],
+	"volunteer": [{
+		"organization": " LA Women's Ruby On Rails Group",
+		"position": "Teacher",
+		"startDate": "2014-02-15",
+		"endDate": "2014-02-15",
+		"summary": "I have helped this wonderful organization to train and provide a set of tools and knowledge to women that want to start working in the Software Development industry.",
+		"highlights": []
+	}],
+	"education": [{
+		"institution": "Centro de Altos Estudios en Ciencias Economicas",
+		"area": "Information Technology",
+		"studyType": "Engineering",
+		"startDate": "1999-03-01",
+		"endDate": "2004-11-30",
+		"gpa": "",
+		"courses": []
+	}],
+	"awards": [],
+	"publications": [],
+	"skills": [{
+			"name": "Cloud Architecture",
+			"level": "",
+			"keywords": [
+				"Cloud Foundry",
+				"Multi Datacenter",
+				"AWS",
+				"OpenStack",
+				"IaaS",
+				"PaaS",
+				"High Performance",
+				"High Availability",
+				"Virtualization",
+				"Containers",
+				"Docker"
+			]
+		},
+		{
+			"name": "DevOps",
+			"level": "",
+			"keywords": [
+				"Continuous Integration",
+				"Continuous Delivery",
+				"Linux",
+				"Virtualization",
+				"Consul",
+				"Jenkins",
+				"Git",
+				"GitHub",
+				"GitLab / GitLab CI",
+				"Concourse CI"
+			]
+		},
+		{
+			"name": "Software Development",
+			"level": "",
+			"keywords": [
+				"Golang",
+				"Ruby",
+				"Java",
+				"Bash"
+			]
+		}
+	],
+	"languages": [{
+			"language": "English",
+			"fluency": "Very advanced"
+		},
+		{
+			"language": "Spanish",
+			"fluency": "Native speaker"
+		}
+	],
+	"interests": [{
+			"name": "Guitar playing",
+			"keywords": [
+				"Blues",
+				"Jazz",
+				"Funk"
+			]
+		},
+		{
+			"name": "Tango",
+			"keywords": [
+				"Dancing",
+				"Teaching",
+				"Exhibitions"
+			]
+		}
+	]
 }

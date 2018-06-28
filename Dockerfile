@@ -4,9 +4,15 @@ LABEL maintainer="juan@jpgenovese.com"
 RUN apt-get update \
 &&  apt-get upgrade -y --force-yes \
 &&  apt-get install -y --force-yes \
+    chrpath \
+    libxft-dev \
     libssl-dev \
     libreadline-dev \
     zlib1g-dev \
+    libfreetype6 \
+    libfreetype6-dev \
+    libfontconfig1 \
+    libfontconfig1-dev \
     wget \
     curl \
     git \
@@ -31,6 +37,7 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
 # yarn install
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 
+# Install Ruby
 RUN git clone git://github.com/rbenv/rbenv.git /usr/local/rbenv \
 &&  git clone git://github.com/rbenv/ruby-build.git /usr/local/rbenv/plugins/ruby-build \
 &&  git clone git://github.com/jf/rbenv-gemset.git /usr/local/rbenv/plugins/rbenv-gemset \

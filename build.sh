@@ -1,5 +1,6 @@
 #! /bin/bash
 
+RESUME_THEME=stackoverflow
 
 build_jekyll() {
   bundle install
@@ -12,10 +13,10 @@ EOF
 
 build_resume() {
   pushd ./resume
-  npm install jsonresume-theme-flat
-  hackmyresume build resume.json TO out/resume.html -t node_modules/jsonresume-theme-flat
-  hackmyresume build resume.json TO out/resume.pdf --pdf wkhtmltopdf -t node_modules/jsonresume-theme-flat
-  hackmyresume analyze resume.json > out/resume.stats
+  npm install jsonresume-theme-$RESUME_THEME
+  hackmyresume build ./resume.json TO out/resume.html -t node_modules/jsonresume-theme-$RESUME_THEME
+  hackmyresume build ./resume.json TO out/resume.pdf --pdf wkhtmltopdf -t node_modules/jsonresume-theme-$RESUME_THEME
+  hackmyresume analyze ./resume.json > out/resume.stats
   cat out/resume.stats
   popd
 }
