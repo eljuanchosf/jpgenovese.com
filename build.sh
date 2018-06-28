@@ -15,9 +15,7 @@ build_resume() {
   npm install jsonresume-theme-flat
   hackmyresume build resume.json TO out/resume.html -t node_modules/jsonresume-theme-flat
   hackmyresume build resume.json TO out/resume.pdf --pdf wkhtmltopdf -t node_modules/jsonresume-theme-flat
-  wkhtmltopdf out/resume.pdf.html out/resume.pdf
   hackmyresume analyze resume.json > out/resume.stats
-  ls -lah out/
   cat out/resume.stats
   popd
 }

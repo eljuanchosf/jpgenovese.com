@@ -18,7 +18,8 @@ RUN apt-get update \
     httpie \
     linkchecker \
     sshpass \
-    wkhtmltopdf \
+&&  curl -sL -o wkhtmltox.deb https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.stretch_amd64.deb \
+&&  apt install -y ./wkhtmltox.deb \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
