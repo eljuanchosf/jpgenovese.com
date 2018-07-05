@@ -27,7 +27,6 @@ test:
   dependencies: 
     - build
   script:
-    - ./bin/build.sh
     - cd output/jpgenovese && webfsd -p 4000 -f index.html
     - http GET http://127.0.0.1:4000 | grep "Juan Pablo Genovese"
     - linkchecker http://127.0.0.1:4000/
