@@ -11,5 +11,7 @@
 
 ## Helpers
 
-* [`build.sh`](build.sh): Script for building the site.
-* [`serve.sh`](serve.sh): Serve Jekyll site with autoreload.
+Find them in the `bin` directory.
+
+* [`build.sh`](bin/build.sh): Script for building the site. **Usage**: from the root of the project, run `bin/build.sh`
+* [`serve.sh`](bin/serve.sh): Serve Jekyll site with autoreload. **Usage**: from the root of the project, run `bin/serve.sh`

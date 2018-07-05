@@ -7,3 +7,4 @@ _config.ci.yml
 resume/node_modules
 resume/out
 jpgenovese
+output/

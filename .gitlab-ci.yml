@@ -1,4 +1,4 @@
-image: juanpgenovese/jekyll:3.8.3
+image: juanpgenovese/site:1.0
 
 stages:
   - build
@@ -7,8 +7,8 @@ stages:
 
 cache:
   paths:
-    - jpgenovese
-    - resume/out
+    - output/jpgenovese
+    - output/resume
 
 variables:
   JEKYLL_ENV: production
@@ -16,18 +16,19 @@ variables:
 build:
   stage: build
   script:
-    - ./build.sh
+    - ./bin/build.sh
   artifacts:
     expire_in: 1 hour
     paths:
-      - jpgenovese
-      - resume/out
+      - output/jpgenovese
+      - output/resume
 test:
   stage: test
   dependencies: 
     - build
   script:
-    - cd jpgenovese && webfsd -p 4000 -f index.html
+    - ./bin/build.sh
+    - cd output/jpgenovese && webfsd -p 4000 -f index.html
     - http GET http://127.0.0.1:4000 | grep "Juan Pablo Genovese"
     - linkchecker http://127.0.0.1:4000/
 
@@ -39,8 +40,8 @@ deploy:
   script:
     - export LC_ALL=C.UTF-8
     - export LANG=C.UTF-8
-    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./jpgenovese/* "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$BLOG_TARGET_DIR/"
-    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./resume/out/resume.html "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$RESUME_TARGET_DIR/index.html"
-    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./resume/out/resume.pdf "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$RESUME_TARGET_DIR/jpg-resume.pdf"
+    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./output/jpgenovese/* "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$BLOG_TARGET_DIR/"
+    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./output/resume/resume.html "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$RESUME_TARGET_DIR/index.html"
+    - sshpass -p "$ACCESS_SECRET" scp -r -o 'StrictHostKeyChecking no' ./output/resume/resume.pdf "$ACCESS_TOKEN@$HOST:/home/$ACCESS_TOKEN/$RESUME_TARGET_DIR/jpg-resume.pdf"
   only:
   - master
