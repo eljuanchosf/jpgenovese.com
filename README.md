@@ -15,3 +15,4 @@ Find them in the `bin` directory.
 
 * [`build.sh`](bin/build.sh): Script for building the site. **Usage**: from the root of the project, run `bin/build.sh`
 * [`serve.sh`](bin/serve.sh): Serve Jekyll site with autoreload. **Usage**: from the root of the project, run `bin/serve.sh`
+* [`docker-build.sh`](bin/docker-build.sh): Build Docker image. **Usage**: from the root of the project, run `bin/docker-build.sh`
