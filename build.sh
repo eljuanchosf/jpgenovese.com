@@ -2,8 +2,8 @@
 
 set -e
 
-RESUME_ONLINE_THEME=stackoverflow
-RESUME_PDF_THEME=spartan
+RESUME_ONLINE_THEME=paper-condensed
+RESUME_PDF_THEME=paper-condensed
 
 build_jekyll() {
   bundle install
