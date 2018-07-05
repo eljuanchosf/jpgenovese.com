@@ -1,1 +1,0 @@
-jekyll: ls *.yml | entr -r ./serve.sh
