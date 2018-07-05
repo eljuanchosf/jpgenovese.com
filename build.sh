@@ -2,8 +2,8 @@
 
 set -e
 
-RESUME_ONLINE_THEME=paper-condensed
-RESUME_PDF_THEME=paper-condensed
+RESUME_ONLINE_THEME=paper
+RESUME_PDF_THEME=paper
 
 build_jekyll() {
   bundle install
