@@ -1,4 +1,4 @@
-# Juan Pablo's Genovese site
+# Juan Pablo Genovese's site
 
 [![pipeline status](https://gitlab.com/eljuanchosf/jpgenovese.com/badges/master/pipeline.svg)](https://gitlab.com/eljuanchosf/jpgenovese.com/commits/master)
 
